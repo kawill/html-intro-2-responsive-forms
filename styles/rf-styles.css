@@ -1,0 +1,45 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+}
+
+.form {
+    position: relative;
+    margin: 1em;
+}
+
+@media screen and (min-width: 800px) {
+.left {
+
+    margin-right: 67%;
+    width: 33%;
+    height: 100%;
+    float: left;
+    display: table-column;
+}
+
+.middle {
+
+    margin-right: 33%;
+    margin-left: 33%;
+    width: 33%;
+    position: absolute;
+    height: 100%;
+    display: table-column;
+
+}
+
+.right {
+    margin-left: 67%;
+    margin-right: 0;
+    width: 33%;
+    position: absolute;
+    height: 100%;
+    float: right;
+    display: table-column;
+}
+}
